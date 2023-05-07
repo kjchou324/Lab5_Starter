@@ -13,7 +13,6 @@ function init() {
 
   // add voices only after voices load
   synth.addEventListener('voiceschanged', function() {
-    console.log('changed');
     voices = synth.getVoices();
 
     for (let i = 0; i < voices.length; i++) {
